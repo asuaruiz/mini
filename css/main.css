@@ -4,6 +4,10 @@
 	margin: 0;
 	padding: 0;
 }
+body {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+/*ESTILOS DEL HEADER*/
 ul {
 	list-style: none;
 	text-decoration: none;
@@ -13,10 +17,10 @@ li {
 	text-align: center;
 	display: inline-block;
 	text-decoration: none;
+	margin: 1em;
 }
 .fondo-header {
 	background-color: #FFE4E1;
-	height: 100px;
 	width: auto;
 	color: #FFFF99;
 	text-align: center;
@@ -29,17 +33,15 @@ li {
 	cursor: pointer;
 }
 .botones {
-	padding: 1em;
+	padding: 1em 2em;
 	margin-right: 3em;
 	background-color: #FFFF99;
 	margin-top: 1em;
 	border-radius: 0.4em;
 	cursor: pointer;
-	color: #FFFF99;
+	color: blue;
 }
-.botones:hover {
-	border: 2px solid #FFFF99;
-}
+
 .boton-sumate:hover {
 	border: 2px solid #FFC0CB;
 }
@@ -53,10 +55,11 @@ li {
 /* Dropdown Button */
 .dropbtn {
     background-color: #FFFF99;
-    color: purple;
+    color: blue;
     padding: 1em;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -87,8 +90,6 @@ li {
 .dropdown-content a:hover {
 	background-color: #FFFF99;
 	border-radius: 5px;
-
-
 }
 
 /* Show the dropdown menu on hover */
@@ -101,55 +102,114 @@ li {
 .dropdown:hover .dropbtn {
     background-color: #FFFF99;
 }
-/*SECTION1---------------------*/
-.fondo-1 {
-	background-image: url(http://i.huffpost.com/gen/2611686/images/o-BREAST-CANCER-AWARENESS-facebook.jpg);
-	height: 600px;
+/*ESTILOS SECTION 1 CANCER AWARENESS*/
+
+.fondo-1 { /*Imagen de fondo altura automatica*/
+	background-image: url(../img/cancer.jpg);
 	width: auto;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center top;
 	text-align: center;
 }
-.tit-1 {
-	font-size: 5em;
+.tit-1 { /*titulo 1 CANCER AWARENESS*/
+	font-size: 4em;
 	font-style: italic;
 	color: #DA70D6;
 	font-weight: bolder;
-	margin-top: 3em;
-	margin-left: -3em;
+	margin-top: 2em;
+	margin-left: -4em;
+	text-shadow: 1px 1px 1px #000;
 }
-.tit-2 {
+.tit-2 {/*titulo 2 FIGHTERS AND SURVIVERS*/
 	font-size: 3em;
 	color: #00BFFF;
-	margin-left: -1em;
+	margin-left: -3em;
+	text-shadow: 1px 1px 1px #000;
 }
-.subtit-1 {
+.subtit-1 {/*subtitulo 1 DON'T FORGET THOSE WHO FOUGHT AND LOST*/
 	font-size: 2em;
-	color: #FFFF99 ;
+	color: #01DF3A ;
 	margin-left: -12em;
+	margin-bottom: 5em;
+	
+
 }
-/*SECTION HISTORIAS*/
-.fondo-2 {
-	background-image: url();
+.subtit-2 {/*subtitulo STORIES*/
+	font-size: 5em;
+	color: #610B5E ;
+	margin-left: -8em;
+	margin-bottom: 3em;
+}
+/*----------------SECTION HISTORIAS----------------*/
+.fondo-2 { /*Fondo del Contenedor fluid de la seccion 2*/
 	text-align: center;
+	background-color: #FFE4E1;
+	font-family: 'Architects Daughter', cursive;
 }
-.contenedor-1 {
-	height: 380px;
-	width: 300px;
-	margin: 3em 6em;
+.fondo-3 {/*Fondo de las Cajas Contenedoras*/
+	background-color: #CEECF5;
+	margin: 2em 3em;
+	padding-top: 2em;
+	border-radius: 10px;
 }
-.banner-size {
+/*.opacity {
+	background-color: white;
+	opacity: 0.5;
+}*/
+.fotosize {/*Estilo de la caja contenedora de la imagen*/
 	height: 300px;
 	width: 300px;
+	border-radius: 20px;
 	margin: 0 auto;
 }
-.banner-size:hover{
-	transform: scale(1.3);
+.sub-tit-foto { /*Titulo del Contenedor*/
+	font-size: 30px;
+	margin-top: 1em;
 }
-.banner-tittle {
-	font-size: 2em;
-	background-color: pink;
-	border: 1px solid pink;
-	margin-top: 1.2em;
+.foto1 {/*Imagen 1*/
+	background-image: url(../img/lungcancer2.jpg);
+	background-size: 130%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 1em;
+}
+.foto1:hover {
+	transform: scale(1.2);
+}
+.foto2 { /*Imagen 2*/
+	background-image: url(../img/mama2.jpg);
+	background-size: 130%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 1em;
+}
+.foto2:hover {
+	transform: scale(1.2);
+}
+.foto3 { /*Imagen 3*/
+	background-image: url(../img/lungcancer.jpg);
+	background-size: 130%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 1em;
+}
+.foto3:hover {
+	transform: scale(1.2);
+}
+.foto4 { /*Imagen 4*/
+	background-image: url(../img/food.jpg);
+	background-size: 130%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 1em;
+}
+.foto4:hover {
+	transform: scale(1.2);
+}
+/*ESTILOS FOOTER*/
+.fondo-4 {
+	background-color: #1C1C1C;
+	color: white;
+	padding: 1em;
 }
