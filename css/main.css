@@ -144,11 +144,11 @@ li {
 /*----------------SECTION HISTORIAS----------------*/
 .fondo-2 { /*Fondo del Contenedor fluid de la seccion 2*/
 	text-align: center;
-	background-color: #FFE4E1;
+	background-color: pink;
 	font-family: 'Architects Daughter', cursive;
 }
 .fondo-3 {/*Fondo de las Cajas Contenedoras*/
-	background-color: #CEECF5;
+	background-color: #DA70D6;
 	margin: 2em 3em;
 	padding-top: 2em;
 	border-radius: 10px;
@@ -199,7 +199,7 @@ li {
 }
 .foto4 { /*Imagen 4*/
 	background-image: url(../img/food.jpg);
-	background-size: 130%;
+	background-size: 140%;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-top: 1em;
